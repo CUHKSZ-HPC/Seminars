@@ -13,3 +13,10 @@ In order to enable #pragma option, you should use intel c/c++ compiler
 icc -mavx2 -mfma -o test code.cpp -O2  
 
 
+###MPI test file
+
+```shell
+$ mpicc -o $(FILENAME) $(FILENAME.cpp) -maxv2 -O2
+$ mpirun -n $(num of processs) ./executable
+```
+
