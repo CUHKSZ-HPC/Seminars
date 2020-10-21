@@ -2,7 +2,7 @@
 
 ### Step 1: Get Docker Runtime
 
-Perhaps you don't really have a NVIDIA GPU standby, or you haven't setup a CUDA environment, but it does not mean that you could not try CUDA programming on your own computer. I found there's someone on the Internet has already implemented a GPU emulator over CPU and he also published a docker image with GPU emulation enabled, which allows you to compile and execute CUDA codes even without a GPU.
+Perhaps you don't really have an NVIDIA GPU, or you haven't setup a CUDA environment, but fortunately, it does not mean that you cannot try CUDA programming on your own computer. I found there is an awesome team on the Internet that has already implemented a GPU emulator over CPU, and more, they also published a docker image with GPU emulator enabled. This solution may allow you to compile and execute CUDA codes even without a GPU.
 
 Before getting start, you should first install a docker runtime on your host machine (no OS restriction). To install docker runtime, please follow this website: https://docs.docker.com/get-docker/
 
@@ -12,7 +12,7 @@ Before getting start, you should first install a docker runtime on your host mac
 
 After installed Docker runtime, you are ready to download the docker image of GPU emulator and launch a docker container using the downloaded docker image.
 
-In your Terminal (PowerShell for Windows Users) use following command to pull the docker image
+In your Terminal (PowerShell for Windows Users), use following command to pull the docker image
 
 ```bash
 $ docker pull srirajpaul/gpgpu-sim:0.1
@@ -51,7 +51,7 @@ $ docker container attach fd9611dbae32
 
 ### Step 3: Compile and Execute CUDA Program
 
-Normally a CUDA program need to be compiled by an executable `nvcc` (NVIDIA CUDA compiler). Clearly, compilation staging in itself does not help towards the goal of application compatibility with future GPU, so nvcc will only help to compile the CUDA program in PTX, an intermediate representation for JIT virtual compute architecture.
+Normally, a CUDA program need to be compiled by an executable `nvcc` (NVIDIA CUDA compiler). Need to mention that to enhance the compatibility of CUDA program on future GPU architectures, nvcc will only help to compile the CUDA program into PTX, an intermediate representation for JIT virtual compute architecture.
 
 ![https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/graphics/just-in-time-compilation.png](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/graphics/just-in-time-compilation.png)
 
