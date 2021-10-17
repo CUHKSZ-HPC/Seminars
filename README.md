@@ -8,4 +8,5 @@ This repository stores all the slides and code of seminars hosted by CUHK(SZ) Su
 
 **Previous Seminars:**
 
-- 2020/10/11: Introduction to SIMD Programming \[[slides](https://github.com/CUHKSZ-HPC/Seminars/blob/main/2020/2020-10-1-SIMD/SIMDseminar.pdf)\]\[[code](https://github.com/CUHKSZ-HPC/Seminars/blob/main/2020/2020-10-11-SIMD/)\]
+- 2020/10/17: Linux & C/C++ Basic \[[slides](https://github.com/CUHKSZ-HPC/Seminars/blob/main/2020/2020-10-1-SIMD/SIMDseminar.pdf)\]
+
